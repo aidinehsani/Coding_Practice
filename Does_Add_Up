@@ -1,0 +1,14 @@
+def DoesAddUp(lst, k):
+
+    l = len(lst)
+    for i in range(l):
+        for j in range(l):
+            if lst[i] + lst[j] == k:
+
+                return True
+
+    return False
+
+arr = [10, 15, 3, 7]
+k = 17
+print(DoesAddUp(arr,k))
